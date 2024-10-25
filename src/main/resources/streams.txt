@@ -1,0 +1,34 @@
+1. Map - filter - reduce
+--------------------------
+Takes data from outside the application/JVM memory but processes data in-memory in an application.
+Collecting data is reducing data in a mutable container in java streams. Data is processed and mapped
+into a new list or set of data.
+
+There is collection API and stream API, they are different.
+
+Mapping is taking an object of a particular type and transforming that data/object into
+another object of either the same type or another type. Mapping changes the type of object but does not change the
+number of elements. Also maintains the order of the object
+
+Filter takes the object and decide if it should be used for computation based on certain conditions. It does not change
+ the type of the data but changes the number of objects that we have
+
+An efficient implementation of the map-filter method would be in a way that there will be no duplication of data while
+processing but work in the same way as the iterator pattern.
+
+Stream Object implement Map-Filter-Reduce without the duplication of data as in the Collection object.
+
+The stream object when instantiated is an empty object and does not carry any form of data. It does not create any load
+on the CPU or the memory.
+
+All data in a new instance of a stream created are computed one at a time as in the iterator pattern when computing or
+processing the items in a list.
+
+------------------------------------------------
+two kinds of methods defined in a stream object
+------------------------------------------------
+1. methods that create another stream (intermediate methods)
+2. methods that produce results. (terminal methods)
+
+
+
